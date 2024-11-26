@@ -1,0 +1,159 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #404040;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff7100;
+    color: black;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ff6300;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #ff6300;
+}
+
+.header .nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.program {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+.program1 {
+    width: 500px;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #ff8700;
+}
+
+.program2 {
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #ff8700;
+}
+
+.ul {
+    text-align: left;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.grid-item p {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ff8700;
+    color: black;
+}
+
+.registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration form label, .registration form input, .registration form textarea {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.registration form button {
+    padding: 10px 20px;
+    background-color: #ff6800;
+    color: black;
+    border: 1px black solid;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.registration form button:hover {
+    background-color: #ff8700;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ff7100;
+    color: white;
+}
+
+.footer .social-icons {
+    display: flex;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons img {
+    width: 20%;
+    max-width: 100px;
+
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .header .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header .nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
